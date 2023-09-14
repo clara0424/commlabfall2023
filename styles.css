@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+/* .image-row {
+    display: flex;
+    justify-content: space-between; /* this will add equal space between each image */
+    /* } */ */
+
+.mainpage {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-position: center;
+    background-size: cover;
+    width:100%;
+    height:auto;
+}
+
+.image1 {
+    position: absolute;
+    top: 110px;
+    left:80px;
+    right:0px;
+}
+
+.name1 {
+    position: absolute;
+    left: 45px;
+    top: 0px;
+    text-align: left;
+    font-size: 35px;
+    color:lightcoral
+}
+
+.name2 {
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+    text-align: right;
+    font-size: 35px;
+    color:cornflowerblue
+}
+
+.bio {
+    position: absolute;
+    left: 160px;
+    top: 130px;
+    text-align: center;
+    font-size: 35px;
+    color: white
+}
+
+.vision {
+    position: absolute;
+    right: 190px;
+    bottom: 130px;
+    text-align: center;
+    font-size: 35px;
+    color: white
+}
+
+.t1 {
+    position:relative;
+}
+
+.t2 {
+    position: absolute;
+    left: 200px;
+}
+
+.t3 {
+    position:absolute;
+    left: 700px;
+}
+
+.t4 {
+    position: absolute;
+    left: 1200px;
+}
+
+.p1 {
+    position: relative;
+}
+
+.p2 {
+    position: relative;
+}
+
+.video1 {
+   width: 100%;
+   position: block;
+   top: 150px;
+}
