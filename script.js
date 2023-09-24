@@ -1,10 +1,7 @@
-// // JavaScript code in script.js
+// this is redirecting to the link when you press the buttons in contacts page
 
-// // Prompt the user for their name and store it in a variable
-// var userName = prompt("What's your name?");
+function gotoLink(link){
+    console.log(link.value);
+    window.open(link.value);
+};
 
-// // Create a message to greet the user
-// var greeting = "Hello, " + userName + "! Welcome to our website.";
-
-// // Display the greeting on the webpage
-// document.write(greeting);
