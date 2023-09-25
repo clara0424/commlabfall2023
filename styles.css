@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* this is the image that I uesd to overlap over the original homepage image */
+.homepage2 {
+    position: absolute;
+    z-index:3;
+    top:0;
+    left:780px;
+}
+
+/* this is the main homepage image */
+.homepage {
+    background-position: center;
+    position: absolute;
+    z-index:1;
+    background-size:cover;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    top:0;
+    right:0;
+    z-index:1000;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    background: transparent;
+    transition:all .05s ease;
+    padding: 20px 100px; /* padding is the location of the entire menu bar links */
+}
+
+/* establish navbar */
+.navbar{
+    display: flex;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(135, 60, 100);
+    font-size: 22px;
+    font-weight: 300;
+    margin-left: 190px;
+}
+
+/* this is a function that allows you to change the color of navbar buttons if you hover your cursor over them */
+a:hover{ 
+    color: #FFB8B1;
+}
+/* end of displaying navbar */
+
+.name1 {
+    display: inline-flex;
+}
+
+/* animation for name1, which is the "Welcome to..." */
+.dynamic-txts li {
+    list-style: none;
+    font-size: 80px;
+    font-weight: 50;
+    color:rgb(241, 113, 113);
+    margin: auto;
+    position: absolute;
+    z-index:2;
+    left: 80px;
+    top: 120px;
+    text-align: left;
+}
+
+.dynamic-txts li span {
+    position: relative;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index:2;
+    background: rgb(254,236,190);
+    border-left: 2px solid #FC6D6D;
+    animation: typing 1.5s steps(10) infinite; 
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+/* end of name1 animation */
+
+/* animation for name2, which is the "My Playground" */
+.name2 {
+    display: inline-flex;
+}
+
+.dynamic-txts-2 li {
+    position: absolute;
+    z-index:2;
+    left: 180px;
+    top: 580px;
+    text-align: left;
+    font-size: 80px;
+    color:rgb(89, 150, 89);
+}
+
+.dynamic-txts-2 li span {
+    position: relative;
+}
+
+.dynamic-txts-2 li span::after{
+    content: "";
+    position: absolute;
+    z-index:2;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(254,236,190);
+    border-left: 2px solid rgb(89, 150, 89);
+    animation: typing 1.5s steps(10) infinite; 
+}
+/* end of name2 animation */
+
+/* positioning and adjusting all images */
+.image8 {
+    position: absolute;
+    z-index:3;
+    top: 60px;
+    left: 1230px;
+}
+
+.image1 {
+    position: absolute;
+    z-index:4;
+    top: 920px;
+    left: 160px;
+    transform: rotate(20deg);
+}
+
+.image2 {
+    /* transform: rotate(120deg); */
+    position: absolute;
+    z-index:3;
+    top: 170px;
+    left: 90px;
+}
+
+.image3 {
+    position: absolute;
+    z-index:3;
+    bottom: 130px;
+    left: 600px;
+}
+
+.image5 {
+    position: absolute;
+    z-index:3;
+    top: 420px;
+    left: 930px;
+}
+
+.image7 {
+    position: absolute;
+    z-index:3;
+    top: 420px;
+    left: 1230px;
+}
+
+.image6 {
+    position: absolute;
+    z-index:2;
+    top: 540px;
+    left: 30px;
+}
+
+.image4 {
+    position: absolute;
+    z-index:2;
+    top: 105px;
+    left: 620px;
+    transform:rotate(320deg);
+}
+
+/* adjusting descriptions for the homepage -- this is because I had to separate each quote by line in order to color code them differently */
+.mainpagedescription1 {
+    position: absolute;
+    z-index:2;
+    left: 160px;
+    top: 300px;
+    text-align: center;
+    font-size: 25px;
+    color:rgb(246, 155, 58);
+}
+/* end of adjusting images */
+
+.mainpagedescription2 {
+    position: absolute;
+    z-index:2;
+    left: 160px;
+    top: 360px;
+    text-align: center;
+    font-size: 25px;
+    color:rgb(224, 126, 243);
+}
+
+.mainpagedescription3 {
+    position: absolute;
+    z-index:2;
+    left: 160px;
+    top: 420px;
+    text-align: center;
+    font-size: 25px;
+    color:rgb(126, 167, 243);
+}
+
+.mainpagedescription4 {
+    position: absolute;
+    z-index:2;
+    left: 160px;
+    top: 480px;
+    text-align: center;
+    font-size: 25px;
+    color:rgb(232, 93, 158);
+}
+/* end of color coding homepage quotes */
+
+/* beginning of synopsis page, including its image, title, and description */
+.synopsisimg {
+    position: absolute;
+    z-index: 3;
+    top: 840px;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    width:100%;
+}
+
+.desc1 {
+    position: absolute;
+    z-index: 3;
+    left: 280px;
+    top: 910px;
+    font-size: 70px;
+    color:cornflowerblue
+}
+
+.desc2 {
+    position: absolute;
+    z-index: 3;
+    top: 970px;
+    text-align: center;
+    font-size: 20px;
+    margin: 100px;
+}
+/* end of synopsis page */
+
+/* beginning of film page */
+.image9 {
+    position: absolute;
+    z-index:3;
+    top: 1680px;
+    background-position: center;
+    background-size: cover;
+}
+
+.video1 {
+    position: absolute;
+    z-index: 4;
+   width: 74.4%;
+   height: 100%;
+   align-self: center;
+   top: 1733px;
+    left: 223px;
+}
+/* end of film page */
+
+/* beginning of contacts page */
+.contactsimg {
+    position: absolute;
+    z-index: 4;
+    top: 2820px;
+    background-position: center;
+    background-repeat: repeat;
+    width:100%;
+    background-size: cover;
+}
+
+.contactsscript {
+    position: absolute;
+    z-index: 5;
+    top: 3150px;
+    left: 240px;
+    text-align: center;
+    font-size: 20px;
+    color:rgb(93, 158, 227);
+}
+
+.image10 {
+    position: absolute;
+    z-index:6;
+    top: 3355px;
+    left: 332px;
+}
+
+.image11 {
+    position: absolute;
+    z-index:6;
+    top: 3330px;
+    left: 660px;
+}
+
+.image12 {
+    position: absolute;
+    z-index:6;
+    top: 3330px;
+    left: 1040px;
+}
+
+/* instagram button */
+.btn1 {
+    text-decoration: none;
+	font-size: 1.5em;
+    color: black;
+    position: absolute;
+    z-index: 6;
+    top: 3515px;
+    left: 360px;
+}
+
+/* gmail button */
+.btn2 {
+    text-decoration: none;
+	font-size: 1.5em;
+    color: black;
+    position: absolute;
+    z-index: 6;
+    top: 3515px;
+    left: 726px;
+}
+
+/* messenger button */
+.btn3 {
+    text-decoration: none;
+	font-size: 1.5em;
+    color: black;
+    position: absolute;
+    z-index: 6;
+    top: 3515px;
+    left: 1096px;
+}
+/* end of contacts page */
