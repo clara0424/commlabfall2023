@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Viewport meta tag - to ensure the page is rendered correctly on mobile device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Title of the page -->
+	<title>hey, hyewon!</title>
+
+	<!-- Importing font -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@1000&display=swap');
+	  </style>
+
+	<!-- Include styles.css -->
+	<link rel="stylesheet" href="styles.css"> 
+
+	<!-- Include script.js -->
+	<script src="script.js"></script>
+
+</head>
+
+<body>
+	<!-- we're going to create all the buttons for the contacts page -->
+	<div class="btn1">
+		<button onClick="gotoLink(this)" value="https://www.instagram.com/heyhye_clara/">Instagram</button>
+		<!-- <a href="#https://www.google.com" class="btn1">Click</a> -->
+	</div>
+
+	<div class="btn2">
+		<button onClick="gotoLink(this)" value="mailto:hj2326@nyu.edu">Gmail</button>
+		<!-- <a href="#https://www.google.com" class="btn1">Click</a> -->
+	</div>
+
+	<div class="btn3">
+		<button onClick="gotoLink(this)" value="https://m.me/ClaraHyewonJuong">Messenger</button>
+	</div>
+	<!-- end of contacts buttons -->
+
+	<!-- now, we're going to create the header -->
+	<header>
+			<ul class="navbar">
+				<li><a href = "#">Homepage</a></li>
+				<li><a href = "#synopsisimg">Synopsis</a></li>
+				<li><a href = "#image9">Film</a></li>
+				<li><a href = "#contactsimg">Contacts</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- end of header -->
+
+	<!-- this is group for the home page -->
+		<div class="mainpage"> 
+			<div class="homepage">
+				<img src="IMG/clara.jpg" style="width:100%">
+			</div>
+
+			<div class="homepage2">
+				<img src="IMG/clara1.jpg" style="width:730px">
+			</div>
+
+			<!-- elements in the main page -->
+			<div class="name1">
+				<ul class="dynamic-txts">
+					<li><span>Welcome to...</span></li>
+			</div>
+
+			<div class="name2">
+				<ul class="dynamic-txts-2">
+					<li><span>My Playground!</span></li>
+			</div>
+
+				<div class="image1">
+					<IMG SRC="img/mouse.gif" alt="subimage1" style="height:200px">
+				</div>
+
+				<div class="image2">
+					<IMG SRC="img/flowers.gif" alt="subimage2" style="height:120px">
+				</div>
+
+				<div class="image3">
+					<IMG SRC="img/flowers.gif" alt="subimage3" style="height:120px">
+				</div>
+
+				<div class="image4">
+					<IMG SRC="img/strawberry.gif" alt="subimage4" style="height:140px">
+				</div>
+
+				<div class="image5">
+					<IMG SRC="img/smallflowers.gif" alt="subimage5" style="height:120px">
+				</div>
+
+				<div class="image6">
+					<IMG SRC="img/avocado.gif" alt="subimage6" style="height:160px">
+				</div>
+
+				<div class="image7">
+					<IMG SRC="img/bee.gif" alt="subimage7" style="height:200px">
+				</div>
+
+				<div class="image8">
+					<IMG SRC="img/sparkle1.gif" alt="subimage8" style="height:200px">
+				</div>
+
+			<div class="mainpagedescription1">
+				<h3>
+					Hello! I'm Clara, a current sophomore  
+				</h3>
+			</div>
+
+			<div class="mainpagedescription2">
+				<h3>
+					studying Interactive Media at NYUAD. 
+				</h3>
+			</div>
+
+			<div class="mainpagedescription3">
+				<h3>
+					Welcome to my playground of ideas, 
+				</h3>
+			</div>
+
+			<div class="mainpagedescription4">
+				<h3>projects, and more!</h3>
+			</div>
+
+		</div>
+	<!-- end of home page -->
+
+<!-- this is the synopsis page -->
+<center>
+<div class="synopsis"> 
+	<div class="synopsisimg" id="synopsisimg">
+		<img src="img/paper.jpeg" style="width:100%">
+	</div>
+
+	<div class="desc1">
+			<ul class="dynamic-txts-3">
+				<li><span>Synopsis of the Short Film</span></li>
+	</div>
+
+	<div class="desc2">
+		<h3>This film was shot on an ordinary, any other Thursday 9 am morning, which exactly matched the theme that I was thinking of for my website. 
+				The theme I was going for can be described as vintage, cute, personal, and retro, and I tried my best to match both my website and the video to this theme.
+				My focus in this film was to capture the ordinary yet hidden aesthetic snippets of an early, busy weekday campus morning, and to bring out the quiet peace amongst the bustling busy movements.
+				By using techniques such as lens zoom-in, adding sounds that we observed around us daily such as the rolling of a bike or a coin dropping on the floor, etc., as well as holding the camera still without a lot of movements when filming the scenes, I tried to focus on the details of corners of the campus and the people in it.
+				This allows the viewers to feel like they're sneaking a peek secretly and to feel more intimate with the subjects or the locations in the film rather than glossing over them, which matches the "diary" theme that I wanted to foster for my website.
+				The routes that I took while filming the video were: pathway from the east of the campus to campus center and the pathway to and back from the library, etc., and some of the highlighted areas were: the palms, campus buildings, stairways, and the architectural designs of the buildings and pathways.
+				The radio static sound that is used to both start and end the video was also for the purpose of creating a nostalgic, calm, and retro-themed atmosphere.
+				I hope you enjoy the 90 seconds of our campus that is taken from an ordinary person's point of view, but with an extraordinary attention to details and unique addition of audios!
+		</h3>
+	</div>
+</center>
+<!-- end of synopsis page -->
+
+<!-- display video background image -->
+<div class="image9" id="image9">
+	<img src="img/tv.jpg" style="width:100%">
+</div>
+<!-- end of video background image -->
+
+<!-- display video, which will be within the video background image -->
+	<center> 
+		<div>
+			<video class="video1" controls autoplay muted>
+				<source src="img/video.mp4" type="video/mp4">
+			</video> 
+		</div>
+	</center>
+<!-- end of video -->
+
+<!-- this is the contacts page -->
+<center>
+	<div class="contacts"> 
+		<div class="contactsimg" id="contactsimg">
+			<img src="img/google.png" style="width:80%">
+		</div>
+	
+		<div class="contactsscript">
+			<h1>Stay in touch with me through:</h1>
+		</div>
+
+		<div class="image10">
+			<IMG SRC="img/instagram.png" alt="subimage1" style="height:130px">
+		</div>
+
+		<div class="image11">
+			<IMG SRC="img/mail.jpeg" alt="subimage1" style="height:180px">
+		</div>
+
+		<div class="image12">
+			<IMG SRC="img/insta.jpeg" alt="subimage1" style="height:180px">
+		</div>
+	</div>
+</center>
+<!-- end of the contacts page -->
+
+</body>
+
+</html>
